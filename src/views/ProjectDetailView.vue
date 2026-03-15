@@ -103,7 +103,7 @@ const projectsDB = [
 
   // 11-20: Logistics, Hospitality, Finance
   {
-    slug: 'lpg-distribution-dashboard',
+    slug: 'distribution-dashboard',
     title: 'LPG Distribution Dashboard',
     category: 'Logistics & Industrial',
     image: 'https://images.unsplash.com/photo-1586528116311-ad8ed7fc51f7?auto=format&fit=crop&q=80&w=1200',
