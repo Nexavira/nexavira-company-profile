@@ -1,6 +1,7 @@
 <script setup>
   import Navbar from './components/Navbar.vue'
   import SiteFooter from './components/Footer.vue'
+  import WhatsAppButton from './components/WhatsAppButton.vue'
 </script>
 
 <template>
@@ -9,7 +10,7 @@
 
     <!-- <main>
     </main> -->
-
+    <WhatsAppButton />
     <SiteFooter id="footer" />
   </div>
 </template>
