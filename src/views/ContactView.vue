@@ -61,14 +61,16 @@ const sendEmail = async () => {
               <div class="w-12 h-12 bg-nexavira-primary/5 text-nexavira-primary rounded-xl flex items-center justify-center group-hover:bg-nexavira-primary group-hover:text-white transition-all">
                 <Mail :size="24" stroke-width="1.5" />
               </div>
-              <a href="mailto:nexavira@gmail.com" class="text-lg font-semibold text-nexavira-primary hover:text-nexavira-secondary transition">nexavira@gmail.com</a>
+              <span class="text-lg font-semibold text-nexavira-primary hover:text-nexavira-secondary transition">nexavira@gmail.com</span>
+              <!-- <a href="mailto:nexavira@gmail.com" class="text-lg font-semibold text-nexavira-primary hover:text-nexavira-secondary transition">nexavira@gmail.com</a> -->
             </div>
 
             <div class="flex items-center gap-5 group">
               <div class="w-12 h-12 bg-green-50 text-green-600 rounded-xl flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition-all">
                 <MessageSquare :size="24" stroke-width="1.5" />
               </div>
-              <a href="https://wa.me/6285659445565" target="_blank" class="text-lg font-semibold text-nexavira-primary hover:text-green-600 transition">+62 856-5944-5565</a>
+              <span class="text-lg font-semibold text-nexavira-primary hover:text-green-600 transition">+62 856-5944-5565</span>
+              <!-- <a href="https://wa.me/6285659445565" target="_blank" class="text-lg font-semibold text-nexavira-primary hover:text-green-600 transition">+62 856-5944-5565</a> -->
             </div>
 
             <div class="flex items-center gap-5 group">
