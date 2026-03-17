@@ -1,5 +1,42 @@
 <script setup>
-  import { Mail, MessageSquare, MapPin, Send } from 'lucide-vue-next';
+import { ref } from 'vue'
+import emailjs from '@emailjs/browser'
+import { Mail, MessageSquare, MapPin, Send } from 'lucide-vue-next';
+
+// state (tidak mengubah layout)
+const name = ref('')
+const email = ref('')
+const message = ref('')
+
+const sendEmail = async () => {
+  if (!name.value || !email.value || !message.value) {
+    alert('Semua field wajib diisi!')
+    return
+  }
+
+  try {
+    await emailjs.send(
+      'service_fcvyzmo',
+      'template_6isdcom',
+      {
+        from_name: name.value,
+        from_email: email.value,
+        message: message.value,
+      },
+      'a8JHRqJXBkYFKpJhR' 
+    )
+
+    alert('Pesan berhasil dikirim! Kami akan segera menghubungi Anda. ✅')
+
+    name.value = ''
+    email.value = ''
+    message.value = ''
+
+  } catch (error) {
+    alert('Gagal mengirim ❌')
+    console.error(error)
+  }
+}
 </script>
 
 <template>
@@ -44,25 +81,31 @@
         </div>
 
         <div class="bg-[#F7F9FA] p-8 md:p-12 rounded-[2.5rem] border border-gray-100 shadow-xl shadow-nexavira-primary/5" data-aos="fade-left">
-          <form @submit.prevent class="space-y-6">
+          
+          <form @submit.prevent="sendEmail" class="space-y-6">
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="space-y-2">
                 <label class="text-sm font-bold text-nexavira-primary ml-1">Nama Lengkap</label>
-                <input type="text" placeholder="John Doe" class="w-full bg-white border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-nexavira-secondary/20 focus:border-nexavira-secondary transition">
+                <input v-model="name" type="text" placeholder="John Doe" class="w-full bg-white border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-nexavira-secondary/20 focus:border-nexavira-secondary transition">
               </div>
+
               <div class="space-y-2">
                 <label class="text-sm font-bold text-nexavira-primary ml-1">Email</label>
-                <input type="email" placeholder="john@example.com" class="w-full bg-white border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-nexavira-secondary/20 focus:border-nexavira-secondary transition">
+                <input v-model="email" type="email" placeholder="john@example.com" class="w-full bg-white border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-nexavira-secondary/20 focus:border-nexavira-secondary transition">
               </div>
             </div>
+
             <div class="space-y-2">
               <label class="text-sm font-bold text-nexavira-primary ml-1">Pesan Anda</label>
-              <textarea rows="4" placeholder="Ceritakan detail proyek Anda..." class="w-full bg-white border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-nexavira-secondary/20 focus:border-nexavira-secondary transition resize-none"></textarea>
+              <textarea v-model="message" rows="4" placeholder="Ceritakan detail proyek Anda..." class="w-full bg-white border border-gray-200 rounded-2xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-nexavira-secondary/20 focus:border-nexavira-secondary transition resize-none"></textarea>
             </div>
+
             <button class="w-full bg-nexavira-primary hover:bg-nexavira-secondary text-white font-bold py-5 rounded-2xl transition-all shadow-lg shadow-nexavira-primary/20 flex items-center justify-center gap-3 group">
               Kirim Pesan
               <Send :size="18" class="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </button>
+
           </form>
         </div>
 
