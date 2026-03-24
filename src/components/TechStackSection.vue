@@ -120,10 +120,10 @@ const technologies = [
       </div>
 
       <div
-        class="pointer-events-none absolute inset-y-0 left-0 w-48 bg-gradient-to-r from-[#0a3255] via-[#0a3255]/50 to-transparent"
+        class="pointer-events-none absolute inset-y-0 left-0 w-48 bg-linear-to-r from-[#0a3255] via-[#0a3255]/50 to-transparent"
       ></div>
       <div
-        class="pointer-events-none absolute inset-y-0 right-0 w-48 bg-gradient-to-l from-[#0a3255] via-[#0a3255]/50 to-transparent"
+        class="pointer-events-none absolute inset-y-0 right-0 w-48 bg-linear-to-l from-[#0a3255] via-[#0a3255]/50 to-transparent"
       ></div>
     </div>
   </section>

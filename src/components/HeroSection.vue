@@ -90,11 +90,7 @@ onBeforeUnmount(() => ctx?.revert());
             class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-nexavira-primary leading-tight"
           >
             Architecting the <br />
-            <span
-              class="bg-clip-text text-transparent bg-gradient-to-r from-nexavira-primary to-nexavira-secondary"
-            >
-              Digital Future
-            </span>
+            Digital Future
           </AnimatedText>
 
           <AnimatedText
@@ -139,7 +135,7 @@ onBeforeUnmount(() => ctx?.revert());
               class="w-full h-full object-cover"
             />
             <div
-              class="absolute inset-0 bg-gradient-to-t from-nexavira-primary/60 to-transparent"
+              class="absolute inset-0 bg-linear-to-t from-nexavira-primary/60 to-transparent"
             ></div>
           </div>
 

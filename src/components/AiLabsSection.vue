@@ -94,13 +94,10 @@ onBeforeUnmount(() => ctx?.revert());
             tag="h2"
             type="words"
             :duration="0.75"
-            class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight"
+            class="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight"
           >
             Berikan "Otak" Pada <br />
-            <span
-              class="text-transparent bg-clip-text bg-gradient-to-r from-nexavira-secondary to-blue-400 text-6xl"
-              >Bisnis Digital Anda.</span
-            >
+            Bisnis Digital Anda.
           </AnimatedText>
 
           <AnimatedText

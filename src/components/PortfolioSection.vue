@@ -135,7 +135,7 @@ onBeforeUnmount(() => ctx?.revert());
           class="portfolio-card group relative bg-nexavira-primary rounded-[2rem] overflow-hidden shadow-xl hover:shadow-2xl transition-all block cursor-pointer h-[250px]"
         >
           <div
-            class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-nexavira-primary to-[#0a3255] group-hover:scale-110 transition duration-700"
+            class="absolute inset-0 flex items-center justify-center bg-linear-to-br from-nexavira-primary to-[#0a3255] group-hover:scale-110 transition duration-700"
           >
             <component
               :is="project.icon"
@@ -149,7 +149,7 @@ onBeforeUnmount(() => ctx?.revert());
           </div>
 
           <div
-            class="absolute inset-0 bg-gradient-to-t from-nexavira-primary via-nexavira-primary/80 to-transparent p-6 flex flex-col justify-end"
+            class="absolute inset-0 bg-linear-to-t from-nexavira-primary via-nexavira-primary/80 to-transparent p-6 flex flex-col justify-end"
           >
             <span
               class="text-nexavira-secondary text-[10px] font-bold uppercase tracking-widest mb-1"
