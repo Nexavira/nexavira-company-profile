@@ -185,7 +185,8 @@ const allProjects = [
 
 const activeFilter = ref('Semua');
 const categories = [
-  'Semua', 
+  'Semua',
+  'AI & Intelligent Systems',
   'SaaS Platform', 
   'Enterprise & SaaS', 
   'Hospitality & Travel', 

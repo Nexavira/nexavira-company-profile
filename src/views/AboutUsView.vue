@@ -52,7 +52,7 @@
       slug: 'dimas-agung-prasetyo',
       role: 'System Analyst & Backend Developer',
       title: 'Founder \n Chief Executive Officer',
-      image: '/kucing1.jpg',
+      image: '/dimas.jpg',
       quote: 'Analitik yang kuat dimulai dengan alat yang tepat dan rasa ingin tahu yang tinggi.',
       desc: 'Berpengalaman dalam menerjemahkan kebutuhan bisnis yang kompleks menjadi solusi teknis yang andal dan merancang arsitektur sistem berskala besar.'
     },
@@ -60,7 +60,7 @@
       name: 'Pranesha Wahyu S. A',
       slug: 'pranesha-wahyu',
       role: 'Lead Backend Engineer',
-      title: 'Founder \n Chief Technology Officer',
+      title: 'Founder \n Chief Operating Officer',
       image: '/kucing2.png',
       quote: 'Skalabilitas dan efisiensi logika server adalah fondasi dari setiap aplikasi yang hebat.',
       desc: 'Spesialis dalam pengembangan sistem manajemen terpusat, e-government, dan arsitektur database untuk operasional perusahaan lintas sektor.'
@@ -69,7 +69,7 @@
       name: 'Framadhita Eka Ramdhani',
       slug: 'framadhita-eka',
       role: 'Lead Frontend Engineer',
-      title: 'Founder \n Chief Operating Officer',
+      title: 'Founder \n Chief Technology Officer',
       image: '/kucing3.png',
       quote: 'Pengalaman pengguna yang luar biasa lahir dari kode yang bersih dan desain yang empatik.',
       desc: 'Ahli dalam ekosistem React dan Next.js, berfokus pada transformasi visual menjadi antarmuka pengguna interaktif, intuitif, dan responsif.'
