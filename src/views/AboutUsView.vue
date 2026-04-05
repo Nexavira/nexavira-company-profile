@@ -70,7 +70,7 @@ const services = [
       slug: 'framadhita-eka',
       role: 'Lead Frontend Engineer',
       title: 'Founder \n Chief Technology Officer',
-      image: '/kucing3.png',
+      image: '/frama.jpg',
       quote: 'Pengalaman pengguna yang luar biasa lahir dari kode yang bersih dan desain yang empatik.',
       desc: 'Ahli dalam ekosistem React dan Next.js, berfokus pada transformasi visual menjadi antarmuka pengguna interaktif, intuitif, dan responsif.'
     }

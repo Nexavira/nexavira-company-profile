@@ -259,7 +259,7 @@ const teamDB = [
     title: 'Founder \n Chief Technology Officer',
     location: 'Kabupaten Bandung, Jawa Barat',
     education: 'S1 Teknik Informatika',
-    image: '/kucing3.png',
+    image: '/frama.jpg',
     quote: 'Pengalaman pengguna yang luar biasa lahir dari kode yang bersih dan desain yang empatik.',
     experience: '3+ Tahun', 
     specialization: [
