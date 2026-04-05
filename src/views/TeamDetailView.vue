@@ -143,7 +143,7 @@ const teamDB = [
     title: 'Founder \n Chief Operating Officer',
     location: 'Bandung, Jawa Barat',
     education: 'S1 Teknik Informatika',
-    image: '/kucing2.png',
+    image: '/pranesha.jpg',
     quote: 'Skalabilitas dan efisiensi logika server adalah fondasi dari setiap aplikasi yang hebat.',
     experience: '5+ Tahun',
     specialization: [
@@ -398,8 +398,10 @@ const toggleProject = (index) => {
               <div class="absolute top-0 right-0 w-64 h-64 bg-nexavira-secondary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
               
               <div class="relative z-10 text-center md:text-left">
-                <div class="flex flex-col xl:flex-row items-center xl:items-start gap-4 mb-5">
-                  <img :src="member.image" :alt="member.name" class="w-24 h-24 lg:w-28 lg:h-28 rounded-[1.5rem] object-cover shadow-lg ring-4 ring-nexavira-primary/5 shrink-0">
+                <div class="flex flex-col xl:flex-row items-center xl:items-start gap-4 mb-5" @contextmenu.prevent @dragstart.prevent @selectstart.prevent>
+                  <img :src="member.image" :alt="member.name" class="w-24 h-24 lg:w-28 lg:h-28 rounded-[1.5rem] object-cover shadow-lg ring-4 ring-nexavira-primary/5 shrink-0 select-none"
+                    draggable="false"
+                  />
                   <div class="flex-1 mt-3 xl:mt-0">
                     <span class="text-nexavira-secondary font-bold text-[10px] uppercase tracking-[0.2em] mb-1 block whitespace-pre-line">{{ member.title }}</span>
                     <h1 class="text-xl font-extrabold text-nexavira-primary leading-tight mb-1">{{ member.name }}</h1>

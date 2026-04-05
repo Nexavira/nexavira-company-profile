@@ -61,7 +61,7 @@ const services = [
       slug: 'pranesha-wahyu',
       role: 'Lead Backend Engineer',
       title: 'Founder \n Chief Operating Officer',
-      image: '/kucing2.png',
+      image: '/pranesha.jpg',
       quote: 'Skalabilitas dan efisiensi logika server adalah fondasi dari setiap aplikasi yang hebat.',
       desc: 'Spesialis dalam pengembangan sistem manajemen terpusat, e-government, dan arsitektur database untuk operasional perusahaan lintas sektor.'
     },
@@ -253,10 +253,11 @@ const services = [
               <div
                 class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-gray-100 group"
               >
-                <div class="shrink-0 relative">
+                <div class="shrink-0 relative select-none" @contextmenu.prevent @dragstart.prevent @selectstart.prevents>
                   <img
                     :src="member.image"
                     :alt="member.name"
+                    draggable="false"
                     class="w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover shadow-2xl rotate-[-3deg] group-hover:rotate-0 transition-transform duration-500 ring-8 ring-nexavira-secondary/10"
                   />
                   <div
