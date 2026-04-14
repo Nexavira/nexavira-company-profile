@@ -5,6 +5,7 @@ import ContactView from '../views/ContactView.vue'
 import ProjectDetailView from '../views/ProjectDetailView.vue'
 import TeamDetailView from '../views/TeamDetailView.vue'
 import PortfolioView from '@/views/PortfolioView.vue'
+import SaaSProductView from '@/views/SaaSProductView.vue'
 
 const routes = [
   { path: '/', component: HomeView },
@@ -12,7 +13,8 @@ const routes = [
   { path: '/contact', component: ContactView },
   { path : '/portfolio', name: 'Portfolio', component: PortfolioView },
   { path: '/portfolio/:slug', name: 'ProjectDetail', component: ProjectDetailView },
-  { path: '/team/:slug', name: 'TeamDetail', component: TeamDetailView }
+  { path: '/team/:slug', name: 'TeamDetail', component: TeamDetailView },
+  { path: '/saas-product', name: 'SaaSProduct', component: SaaSProductView }
 ]
 
 const router = createRouter({
