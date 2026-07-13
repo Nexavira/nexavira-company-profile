@@ -3,6 +3,7 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import { createUnhead } from '@unhead/vue'
 
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -29,4 +30,5 @@ router.afterEach(() => {
   setTimeout(() => ScrollTrigger.refresh(), 100)
 })
 
-createApp(App).use(router).mount('#app')
+const head = createUnhead()
+createApp(App).use(router).use(head).mount('#app')
